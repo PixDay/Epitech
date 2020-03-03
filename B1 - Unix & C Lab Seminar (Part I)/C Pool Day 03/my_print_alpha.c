@@ -11,4 +11,5 @@ int my_print_alpha(void)
 {
     for (unsigned char letter = 'a'; letter <= 'z'; letter++)
         write(1, &letter, 1);
+    return 0;
 }

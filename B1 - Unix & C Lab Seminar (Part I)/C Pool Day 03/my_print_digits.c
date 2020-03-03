@@ -5,6 +5,8 @@
 ** adrien.colombier@epitech.eu
 */
 
+#include <unistd.h>
+
 int my_print_digits(void)
 {
     for (unsigned char number = '0'; number <= '9'; number++)

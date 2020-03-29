@@ -29,5 +29,7 @@ int my_put_nbr(int nb)
         my_put_nbr(nb / 10);
         my_putchar('0' + (((nb % 10) < 0) ? -(nb % 10) : nb % 10));
     }
+    negatif = 0;
+    zero = 0;
     return 0;
 }

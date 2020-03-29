@@ -42,9 +42,3 @@ int my_print_comb(void)
     }
     return 0;
 }
-
-int main(void)
-{
-    my_print_comb();
-    return 0;
-}

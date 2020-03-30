@@ -3,6 +3,8 @@
 This directory contains the begining of Epitech. It's a 2 weeks full day works of bash
 and C programming. It's basically a lot of exercices.
 
+You can do the exercices in any order but they are logicaly to be done in the order listed below
+
 ## B1 - Unix & C Lab Semina (Part 1)
 
 1 . [C Pool Day 01](https://github.com/PixDay/Epitech/tree/master/B1%20-%20Unix%20%26%20C%20Lab%20Seminar%20(Part%20I)/C%20Pool%20Day%2001)

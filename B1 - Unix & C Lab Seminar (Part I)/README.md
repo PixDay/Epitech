@@ -3,7 +3,9 @@
 This directory contains the begining of Epitech. It's a 2 weeks full day works of bash
 and C programming. It's basically a lot of exercices.
 
-You can do the exercices in any order but they are logicaly to be done in the order listed below
+You can do the exercices in any order but they are logicaly to be done in the order listed below.
+
+Every exercices have a given solution, I don't pretend to give the best and I encourage you to do the exercices without looking to my solutions. (unless you are really stuck)
 
 ## B1 - Unix & C Lab Semina (Part 1)
 

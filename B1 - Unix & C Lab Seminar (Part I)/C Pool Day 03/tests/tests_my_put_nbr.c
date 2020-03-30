@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2020
 ** tests_my_put_nbr.c
 ** File description:
-** Adrien Colombier
+** adrien.colombier@epitech.eu
 */
 
 int my_put_nbr(int nb);

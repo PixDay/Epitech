@@ -5,6 +5,8 @@
 ** adrien.colombier@epitech.eu
 */
 
+#include <stdlib.h>
+
 char *my_strncpy(char *dest, char const *src, int n)
 {
     size_t index = 0;

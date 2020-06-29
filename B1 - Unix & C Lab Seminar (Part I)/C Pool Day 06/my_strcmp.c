@@ -14,10 +14,3 @@ int my_strcmp(char const *s1, char const *s2)
             return (s1[i] - s2[i] < 0) ? -1 : 1;
     return 0;
 }
-
-int main(void)
-{
-    printf("%d\n", my_strcmp("adedigado", "adedigadoo"));
-    printf("%d\n", strcmp("adedigado", "adedigadoo"));
-    return 0;
-}

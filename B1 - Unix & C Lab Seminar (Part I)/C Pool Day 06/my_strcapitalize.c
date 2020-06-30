@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_strlowcase.c
+** my_strcapitalize.c
 ** File description:
 ** adrien.colombier@epitech.eu
 */

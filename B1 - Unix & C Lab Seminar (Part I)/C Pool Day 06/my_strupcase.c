@@ -7,7 +7,7 @@
 
 #include <stdlib.h>
 
-char *my_strncmp(char *str)
+char *my_strupcase(char *str)
 {
     for (size_t i = 0; str[i] != '\0'; i++) {
         if (str[i] >= 'a' && str[i] <= 'z')

@@ -5,4 +5,4 @@
 
 # Summary
 
-[B1 - Unix & C Lab Seminar (Part I)](https://github.com/PixDay/Epitech/tree/master/B1%20-%20Unix%20%26%20C%20Lab%20Seminar%20(Part%20I))
+[B1 - Unix & C Lab Seminar (Part I)](https://github.com/PixDay/Epitech/tree/master/First%20Year/B1%20-%20Unix%20%26%20C%20Lab%20Seminar%20(Part%20I))

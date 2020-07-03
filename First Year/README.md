@@ -13,6 +13,8 @@ Every projects have a given solution, I don't pretend to give the best and I enc
 
 ## Summary
 
+### Semester I
+
 [B1 - Unix & C Lab Seminar (Part I)](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/B1%20-%20Unix%20%26%20C%20Lab%20Seminar%20(Part%20I))
 
 [B1 - Unix & C Lab Seminar (Part II)]()
@@ -29,3 +31,16 @@ Every projects have a given solution, I don't pretend to give the best and I enc
 
 [Shell Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/Shell%20Programming)
 
+### Semester II
+
+[Unix System Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20II/Unix%20System%20Programming)
+
+[C Graphical Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20II/C%20Graphical%20Programming)
+
+[Elementary Programming in C (Part I)](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20II/Elementary%20Programming%20in%20C%20(Part%20I))
+
+[Elementary Programming in C (Part II)](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20II/Elementary%20Programming%20in%20C%20(Part%20II))
+
+[Introduction to AI](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20II/Introduction%20to%20AI/Dante)
+
+[Introduction to Web Development](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20II/Introduction%20to%20Web%20Development/EPyTodo)

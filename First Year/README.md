@@ -13,19 +13,19 @@ Every projects have a given solution, I don't pretend to give the best and I enc
 
 ## Summary
 
-[B1 - Unix & C Lab Seminar (Part I)](https://github.com/PixDay/Epitech/tree/master/First%20Year/B1%20-%20Unix%20%26%20C%20Lab%20Seminar%20(Part%20I))
+[B1 - Unix & C Lab Seminar (Part I)](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/B1%20-%20Unix%20%26%20C%20Lab%20Seminar%20(Part%20I))
 
 [B1 - Unix & C Lab Seminar (Part II)]()
 
-[Unix System Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/Unix%20System%20Programming)
+[Unix System Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/Unix%20System%20Programming)
 
-[Elementary Programming in C](https://github.com/PixDay/Epitech/tree/master/First%20Year/Elementary%20Programming%20in%20C)
+[Elementary Programming in C](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/Elementary%20Programming%20in%20C)
 
-[Mathematics](https://github.com/PixDay/Epitech/tree/master/First%20Year/Mathematics)
+[Mathematics](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/Mathematics)
 
-[C Graphical Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/C%20Graphical%20Programming)
+[C Graphical Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/C%20Graphical%20Programming)
 
-[GetNextLine](https://github.com/PixDay/Epitech/tree/master/First%20Year/GetNextLine)
+[GetNextLine](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/GetNextLine)
 
-[Shell Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/Shell%20Programming)
+[Shell Programming](https://github.com/PixDay/Epitech/tree/master/First%20Year/Semester%20I/Shell%20Programming)
 

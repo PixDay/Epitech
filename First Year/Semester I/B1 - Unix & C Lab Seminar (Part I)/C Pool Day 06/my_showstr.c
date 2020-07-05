@@ -34,9 +34,3 @@ int my_showstr(char const *str)
     }
     return 0;
 }
-
-int main(void)
-{
-    my_showstr("Adrien \n Colombier");
-    return 0;
-}

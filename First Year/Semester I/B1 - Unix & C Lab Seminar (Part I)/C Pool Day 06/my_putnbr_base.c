@@ -25,9 +25,11 @@ void my_putchar(char c)
 int my_putnbr_base(int nbr, char const *base)
 {
     size_t baseSize = my_strlen(base);
-
+    
+    if (nbr < 0)
+        my_putchar('-');
     if (nbr != 0) {
-        my_putnbr_base(nbr / baseSize, base);
+        my_putnbr_base((nbr > 0) ? nbr / baseSize : -(nbr / baseSize), base);
         my_putchar(base[nbr % baseSize]);
     }
     return 0;

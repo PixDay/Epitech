@@ -9,6 +9,8 @@
 
 int my_isneg(int n)
 {
-    write(1, (n < 0) ? 'N' : 'P', 1);
+    char c = (n < 0) ? 'N' : 'P';
+
+    write(1, &c, 1);
     return 0;
 }

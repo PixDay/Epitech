@@ -1,16 +1,15 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_isneg.c
+** my_putstr.c
 ** File description:
 ** adrien.colombier@epitech.eu
 */
 
 #include <unistd.h>
 
-int my_isneg(int n)
+int my_putstr(char const *str)
 {
-    char c = (n < 0) ? 'N' : 'P';
-
-    write(1, &c, 1);
+    for (int i = 0; str[i] != '\0'; i++)
+        write(1, &(str[i]), 1);
     return 0;
 }

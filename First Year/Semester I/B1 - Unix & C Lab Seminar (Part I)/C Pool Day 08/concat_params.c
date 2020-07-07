@@ -6,7 +6,6 @@
 */
 
 #include <stdlib.h>
-#include <string.h>
 
 char *concat_params(int argc, char **argv)
 {
@@ -15,7 +14,7 @@ char *concat_params(int argc, char **argv)
     char *dest = NULL;
 
     for (size_t i = 0; i < argc; i++)
-        len += (strlen(argv[i]) + 1);
+        len += (my_strlen(argv[i]) + 1);
     dest = malloc(len * sizeof(char) + 1);
     for(size_t i = 0; i < argc; i++) {
         for(size_t j = 0; argv[i][j] != '\0'; j++) {

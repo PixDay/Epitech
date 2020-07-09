@@ -6,6 +6,7 @@
 */
 
 #include <stdlib.h>
+#include "include/my.h"
 
 struct info_param *my_params_to_array(int ac, char ** av)
 {

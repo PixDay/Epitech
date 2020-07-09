@@ -7,14 +7,6 @@
 
 #include <stdlib.h>
 
-struct info_param
-{
-    int length;
-    char *str;
-    char *cpy;
-    char **word_array;
-};
-
 struct info_param *my_params_to_array(int ac, char ** av)
 {
     struct info_param *params = malloc((ac + 1) * sizeof(struct info_param));

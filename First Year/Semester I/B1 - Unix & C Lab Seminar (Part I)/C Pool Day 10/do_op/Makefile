@@ -22,7 +22,7 @@ all:	${NAME}
 	@${CC} -c ${CFLAGS} $< -o $@
 
 ${NAME}:	${OBJECTS}
-	@${CC} -o ${NAME} ${OBJECTS}
+	@${CC} -o ${NAME} ${OBJECTS} -L../lib -lmy
 	@echo "\e[0;92mDone ${NAME}\e[0m"
 
 clean:

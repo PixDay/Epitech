@@ -1,5 +1,5 @@
 ##
-## 14/03/2020 Paris
+## EPITECH PROJECT, 2020
 ## Makefile
 ## File description:
 ## Adrien Colombier

@@ -8,8 +8,6 @@
 #include <stdlib.h>
 #include "include/mylist.h"
 
-int my_list_size(linked_list_t const *begin);
-
 int my_apply_on_nodes(linked_list_t *begin, int (*f)(void *))
 {
     linked_list_t *tmp = begin;

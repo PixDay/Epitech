@@ -20,5 +20,6 @@ linked_list_t *my_params_to_list(int ac, char * const *av)
             return NULL;
         tmp = tmp->next;
     }
+    tmp->next = NULL;
     return first;
 }

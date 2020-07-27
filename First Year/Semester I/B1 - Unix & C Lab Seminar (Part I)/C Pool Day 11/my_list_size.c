@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_params_to_list.c
+** my_list_size.c
 ** File description:
 ** adrien.colombier@epitech.eu
 */

@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2020
-** my_concat_list.c
+** my_sort_list.c
 ** File description:
 ** adrien.colombier@epitech.eu
 */

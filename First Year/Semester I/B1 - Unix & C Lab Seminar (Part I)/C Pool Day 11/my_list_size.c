@@ -10,10 +10,12 @@
 
 int my_list_size(linked_list_t const *begin)
 {
-    size_t res = 1;
+    size_t res = 0;
     linked_list_t *tmp = begin;
 
-    while (tmp->next != NULL)
+    while (tmp->next != NULL) {
+        tmp = tmp->next;
         res++;
+    }
     return res;
 }

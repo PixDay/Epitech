@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/discord/499285823058083882)](https://discord.gg/Pxrr6U5)
 
-## First Year (1)
+## First Year
 
 This directory contains the different project i made during my first year at Epitech Paris.
 

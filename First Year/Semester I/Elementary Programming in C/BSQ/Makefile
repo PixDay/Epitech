@@ -7,7 +7,8 @@
 
 CC	=	gcc
 
-SRC	=	src/main.c
+SRC	=	src/main.c	\
+			src/bsq.c
 
 OBJECTS =	${SRC:.c=.o}
 

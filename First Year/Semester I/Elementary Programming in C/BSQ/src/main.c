@@ -5,7 +5,11 @@
 ** adrien.colombier@epitech.eu
 */
 
-int main(void)
+#include "bsq.h"
+
+int main(int argc, char **argv)
 {
-  return 0;
+  if (argc != 2)
+    return FAILURE;
+  return bsq(argv[1]);
 }

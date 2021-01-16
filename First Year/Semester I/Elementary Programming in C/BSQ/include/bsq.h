@@ -9,6 +9,8 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <fcntl.h>
+#include <stdint.h>
 
 #include <stdio.h>
 
@@ -31,5 +33,5 @@ int my_strlen(char const *str);
 
 // BSQ FUNCTIONS
 int bsq(char const * file);
-int allocateBSQ(bsq_t *bsq);
+int allocateBSQ(bsq_t *bsq, char const *file, uint32_t fileSize);
 int fillBSQ(bsq_t *bsq);

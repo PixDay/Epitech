@@ -19,13 +19,13 @@
 
 /* TYPES */
 typedef struct s_bsq {
-  int   fd;
-  char *fileContent;
-  char *charMap;
-  char *solvedMap;
-  int  *intMap;
-  int   nbLine;
-  int   lineSize;
+  int        fd;
+  char      *fileContent;
+  char      *charMap;
+  char      *solvedMap;
+  uint32_t  *intMap;
+  uint32_t   nbLine;
+  uint32_t   lineSize;
 } bsq_t;
 
 // MERLINE C LIBRARY

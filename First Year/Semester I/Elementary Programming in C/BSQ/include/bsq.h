@@ -32,3 +32,4 @@ int my_strlen(char const *str);
 // BSQ FUNCTIONS
 int bsq(char const * file);
 int allocateBSQ(bsq_t *bsq);
+int fillBSQ(bsq_t *bsq);

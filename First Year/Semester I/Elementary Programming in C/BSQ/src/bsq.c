@@ -18,10 +18,10 @@ int bsq(char const * file)
   printf("file size = %ld\n", fileInfo.st_size);
   (void)bsq;
   error = allocateBSQ(&bsq);
-  /*error = fillBSQ(&bsq);
+  error = fillBSQ(&bsq);
   if (error)
     return FAILURE;
-  findBSQ(&bsq);
+  /*findBSQ(&bsq);
   printBSQ(&bsq);*/
   return EXIT_SUCCESS;
 }
@@ -30,5 +30,12 @@ int allocateBSQ(bsq_t *bsq)
 {
   (void)bsq;
   printf("AllocateBSQ function\n");
+  return 0;
+}
+
+int fillBSQ(bsq_t *bsq)
+{
+  (void)bsq;
+  printf("fillBSQ function\n");
   return 0;
 }

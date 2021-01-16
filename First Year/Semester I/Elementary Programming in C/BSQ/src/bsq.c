@@ -7,17 +7,16 @@
 
 #include "bsq.h"
 
-int bsq(char const * file)
+int bsq(char const *file)
 {
   bsq_t bsq;
   struct stat fileInfo;
-  int error = 0;
+  int32_t error = 0;
 
   error = stat(file, &fileInfo);
   printf("error = %d\n", error);
   printf("file size = %ld\n", fileInfo.st_size);
-  (void)bsq;
-  error = allocateBSQ(&bsq);
+  error = allocateBSQ(&bsq, file, fileInfo.st_size);
   error = fillBSQ(&bsq);
   if (error)
     return FAILURE;
@@ -26,10 +25,13 @@ int bsq(char const * file)
   return EXIT_SUCCESS;
 }
 
-int allocateBSQ(bsq_t *bsq)
+int allocateBSQ(bsq_t *bsq, char const *file, uint32_t fileSize)
 {
-  (void)bsq;
   printf("AllocateBSQ function\n");
+  bsq->fd = open(file, O_RDONLY);
+  bsq->fileContent = malloc(fileSize * sizeof(char));
+  bsq->charMap = malloc(fileSize * sizeof(char));
+  
   return 0;
 }
 

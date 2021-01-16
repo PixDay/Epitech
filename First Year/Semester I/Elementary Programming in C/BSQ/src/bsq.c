@@ -27,11 +27,14 @@ int bsq(char const *file)
 
 int allocateBSQ(bsq_t *bsq, char const *file, uint32_t fileSize)
 {
-  printf("AllocateBSQ function\n");
   bsq->fd = open(file, O_RDONLY);
   bsq->fileContent = malloc(fileSize * sizeof(char));
   bsq->charMap = malloc(fileSize * sizeof(char));
-  
+  bsq->solvedMap = malloc(fileSize * sizeof(char));
+  bsq->intMap = malloc(fileSize * sizeof(int32_t));
+  if (bsq->fd == -1 || bsq->fileContent == NULL || bsq->charMap == NULL ||
+      bsq->solvedMap == NULL || bsq->intMap == NULL)
+    return FAILURE;
   return 0;
 }
 

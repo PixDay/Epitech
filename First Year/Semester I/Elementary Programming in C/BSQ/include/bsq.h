@@ -20,6 +20,13 @@
 #define FAILURE 84
 
 /* TYPES */
+typedef struct s_mapper {
+  uint32_t breakLine;
+  char     wallChar;
+  char     freeSpaceChar;
+  char     solveChar;
+} mapper_t;
+
 typedef struct s_bsq {
   int        fd;
   char      *fileContent;
@@ -32,13 +39,6 @@ typedef struct s_bsq {
   uint32_t   error;
   mapper_t   mapper;
 } bsq_t;
-
-typedef struct s_mapper {
-  uint32_t breakLine;
-  char     wallChar;
-  char     freeSpaceChar;
-  char     solveChar;
-} mapper_t;
 
 // MERLINE C LIBRARY
 int my_strlen(char const *str);

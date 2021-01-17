@@ -50,6 +50,7 @@ int fillBSQ(bsq_t *bsq)
   fillCharMap(bsq);
   fillSolvedMap(bsq);
   fillIntMap(bsq);
+  fillNbLine(bsq);
   printf("FILE CONTENT :\n%s\n", bsq->fileContent);
   printf("CHAR MAP :\n%s\n", bsq->charMap);
   for (uint32_t i = 0; bsq->intMap[i] != -2; i++) {

@@ -20,6 +20,8 @@
 /* DEFINES */
 #define FAILURE 84
 #define EOS     1
+#define EOL     -1
+#define EOM     -2
 #define BLOCK   1024
 
 /* TYPES */
@@ -35,7 +37,7 @@ typedef struct s_bsq {
   char      *fileContent;
   char      *charMap;
   char      *solvedMap;
-  uint32_t  *intMap;
+  int32_t   *intMap;
   uint32_t   nbLine;
   uint32_t   lineSize;
   uint32_t   fileSize;

@@ -47,6 +47,7 @@ typedef struct s_bsq {
 
 // MERLINE C LIBRARY
 int my_strlen(char const *str);
+int my_getnbr(char const *str);
 
 // BSQ FUNCTIONS
 int  bsq(char const * file);
@@ -56,3 +57,4 @@ void fillFileContent(bsq_t *bsq);
 void fillCharMap(bsq_t *bsq);
 void fillSolvedMap(bsq_t *bsq);
 void fillIntMap(bsq_t *bsq);
+void fillNbLine(bsq_t *bsq);

@@ -60,3 +60,11 @@ void fillIntMap(bsq_t *bsq)
   }
   bsq->intMap[index] = EOM;
 }
+
+void fillNbLine(bsq_t *bsq)
+{
+  uint32_t nbLine = my_getnbr(bsq->fileContent);
+
+  if (nbLine != bsq->nbLine)
+    bsq->error = FAILURE;
+}

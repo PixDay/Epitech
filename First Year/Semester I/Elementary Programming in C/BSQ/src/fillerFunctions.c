@@ -9,12 +9,13 @@
 
 void fillFileContent(bsq_t *bsq)
 {
-  (void)bsq;
+  bsq->fileContent[bsq->fileSize] = '\0';
+  read(bsq->fd, bsq->fileContent, bsq->fileSize);
 }
 
 void fillCharMap(bsq_t *bsq)
 {
-  (void)bsq;
+  
 }
 
 void fillSolvedMap(bsq_t *bsq)

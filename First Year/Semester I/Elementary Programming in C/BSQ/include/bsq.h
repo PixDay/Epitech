@@ -26,12 +26,21 @@ typedef struct s_bsq {
   uint32_t  *intMap;
   uint32_t   nbLine;
   uint32_t   lineSize;
+  uint32_t   fileSize;
+  mapper_t   mapper;
 } bsq_t;
+
+typedef struct s_mapper {
+  uint32_t breakLine;
+  char     wallChar;
+  char     freeSpaceChar;
+  char     solveChar;
+} mapper_t;
 
 // MERLINE C LIBRARY
 int my_strlen(char const *str);
 
 // BSQ FUNCTIONS
 int bsq(char const * file);
-int allocateBSQ(bsq_t *bsq, char const *file, uint32_t fileSize);
+int allocateBSQ(bsq_t *bsq, char const *file);
 int fillBSQ(bsq_t *bsq);

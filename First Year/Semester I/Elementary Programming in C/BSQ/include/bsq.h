@@ -8,6 +8,7 @@
 #pragma once
 
 /* STANDART INCLUDES */
+#include <unistd.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -18,6 +19,8 @@
 
 /* DEFINES */
 #define FAILURE 84
+#define EOS     1
+#define BLOCK   1024
 
 /* TYPES */
 typedef struct s_mapper {

@@ -7,7 +7,8 @@
 
 CC 		=	gcc
 
-SRCS	=	src/my_strlen.c
+SRCS	=	src/my_strlen.c	\
+				src/my_getnbr.c
 
 OBJ	=	${SRCS:.c=.o}
 

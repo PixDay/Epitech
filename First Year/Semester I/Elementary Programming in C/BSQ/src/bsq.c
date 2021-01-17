@@ -29,7 +29,7 @@ int bsq(char const *file)
 int allocateBSQ(bsq_t *bsq, char const *file)
 {
   bsq->fd = open(file, O_RDONLY);
-  bsq->fileContent = malloc(bsq->fileSize * sizeof(char));
+  bsq->fileContent = malloc((bsq->fileSize + EOS) * sizeof(char));
   bsq->charMap = malloc(bsq->fileSize * sizeof(char));
   bsq->solvedMap = malloc(bsq->fileSize * sizeof(char));
   bsq->intMap = malloc(bsq->fileSize * sizeof(int32_t));

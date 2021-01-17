@@ -5,6 +5,8 @@
 ** adrien.colombier@epitech.eu
 */
 
+#pragma once
+
 /* STANDART INCLUDES */
 #include <stdlib.h>
 #include <sys/types.h>
@@ -27,6 +29,7 @@ typedef struct s_bsq {
   uint32_t   nbLine;
   uint32_t   lineSize;
   uint32_t   fileSize;
+  uint32_t   error;
   mapper_t   mapper;
 } bsq_t;
 
@@ -41,6 +44,10 @@ typedef struct s_mapper {
 int my_strlen(char const *str);
 
 // BSQ FUNCTIONS
-int bsq(char const * file);
-int allocateBSQ(bsq_t *bsq, char const *file);
-int fillBSQ(bsq_t *bsq);
+int  bsq(char const * file);
+int  allocateBSQ(bsq_t *bsq, char const *file);
+int  fillBSQ(bsq_t *bsq);
+void fillFileContent(bsq_t *bsq);
+void fillCharMap(bsq_t *bsq);
+void fillSolvedMap(bsq_t *bsq);
+void fillIntMap(bsq_t *bsq);

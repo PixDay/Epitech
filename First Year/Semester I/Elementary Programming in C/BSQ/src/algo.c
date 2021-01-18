@@ -16,8 +16,10 @@ void algoUpdateIntMap(bsq_t *bsq)
       minValue = getMinValue(bsq, i);
       bsq->intMap[i] = minValue;
     }
-    if (bsq->solutionIndex < minValue)
-      bsq->solutionIndex = minValue;
+    if (bsq->squareSize < minValue) {
+      bsq->solutionIndex = i;
+      bsq->squareSize = minValue;
+    }
     minValue = 0;
   }
 }

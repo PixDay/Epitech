@@ -42,6 +42,7 @@ typedef struct s_bsq {
   uint32_t   lineSize;
   uint32_t   fileSize;
   uint32_t   error;
+  uint32_t   solutionIndex;
   mapper_t   mapper;
 } bsq_t;
 
@@ -52,7 +53,7 @@ int my_getnbr(char const *str);
 // BSQ FUNCTIONS
 int  bsq(char const * file);
 int  allocateBSQ(bsq_t *bsq, char const *file);
-int  fillBSQ(bsq_t *bsq);
+void fillBSQ(bsq_t *bsq);
 void fillFileContent(bsq_t *bsq);
 void fillCharMap(bsq_t *bsq);
 void fillSolvedMap(bsq_t *bsq);

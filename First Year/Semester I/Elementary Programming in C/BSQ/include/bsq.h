@@ -59,3 +59,6 @@ void fillCharMap(bsq_t *bsq);
 void fillSolvedMap(bsq_t *bsq);
 void fillIntMap(bsq_t *bsq);
 void fillNbLine(bsq_t *bsq);
+void findBSQ(bsq_t *bsq);
+void algoUpdateIntMap(bsq_t *bsq);
+void algoWriteSolution(bsq_t *bsq);

@@ -9,7 +9,8 @@ CC	=	gcc
 
 SRC	=	src/main.c						\
 			src/bsq.c							\
-			src/fillerFunctions.c
+			src/fillerFunctions.c	\
+			src/algo.c
 
 OBJECTS =	${SRC:.c=.o}
 

@@ -45,6 +45,7 @@ void fillBSQ(bsq_t *bsq)
   bsq->nbLine = 0;
   bsq->lineSize = 0;
   bsq->solutionIndex = 0;
+  bsq->squareSize = 0;
   bsq->mapper.breakLine = 0;
   bsq->mapper.wallChar = 'o';
   bsq->mapper.freeSpaceChar = '.';

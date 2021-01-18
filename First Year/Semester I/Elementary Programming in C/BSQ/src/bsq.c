@@ -15,10 +15,10 @@ int bsq(char const *file)
 
   error = stat(file, &fileInfo);
   bsq.fileSize = fileInfo.st_size;
-  error = allocateBSQ(&bsq, file);
-  error = fillBSQ(&bsq);
   if (error)
     return FAILURE;
+  allocateBSQ(&bsq, file);
+  fillBSQ(&bsq);
   /*findBSQ(&bsq);
   printBSQ(&bsq);*/
   return EXIT_SUCCESS;

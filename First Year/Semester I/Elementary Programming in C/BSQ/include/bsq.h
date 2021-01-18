@@ -43,6 +43,7 @@ typedef struct s_bsq {
   uint32_t   fileSize;
   uint32_t   error;
   uint32_t   solutionIndex;
+  uint32_t   squareSize;
   mapper_t   mapper;
 } bsq_t;
 

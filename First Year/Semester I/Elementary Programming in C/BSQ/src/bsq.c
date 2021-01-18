@@ -17,10 +17,12 @@ int bsq(char const *file)
   bsq.fileSize = fileInfo.st_size;
   if (error)
     return FAILURE;
-  allocateBSQ(&bsq, file);
+  error = allocateBSQ(&bsq, file);
+  if (error)
+    return FAILURE;
   fillBSQ(&bsq);
-  /*findBSQ(&bsq);
-  printBSQ(&bsq);*/
+  findBSQ(&bsq);
+  //printBSQ(&bsq);
   return EXIT_SUCCESS;
 }
 
@@ -37,11 +39,12 @@ int allocateBSQ(bsq_t *bsq, char const *file)
   return 0;
 }
 
-int fillBSQ(bsq_t *bsq)
+void fillBSQ(bsq_t *bsq)
 {
   bsq->error = EXIT_SUCCESS;
   bsq->nbLine = 0;
   bsq->lineSize = 0;
+  bsq->solutionIndex = 0;
   bsq->mapper.breakLine = 0;
   bsq->mapper.wallChar = 'o';
   bsq->mapper.freeSpaceChar = '.';
@@ -51,18 +54,10 @@ int fillBSQ(bsq_t *bsq)
   fillSolvedMap(bsq);
   fillIntMap(bsq);
   fillNbLine(bsq);
-  printf("FILE CONTENT :\n%s\n", bsq->fileContent);
-  printf("CHAR MAP :\n%s\n", bsq->charMap);
-  for (uint32_t i = 0; bsq->intMap[i] != -2; i++) {
-    if (bsq->intMap[i] == -1)
-      printf("\n");
-    else
-      printf("%d ", bsq->intMap[i]);
-  }
-  printf("NB LINE :\n%d\n", bsq->nbLine);
-  printf("LINE SIZE :\n%d\n", bsq->lineSize);
-  printf("NB LINE :\n%d\n", bsq->nbLine);
-  printf("ERROR :\n%d\n", bsq->error);
+}
 
-  return 0;
+void findBSQ(bsq_t *bsq)
+{
+  algoUpdateIntMap(bsq);
+  algoWriteSolution(bsq);
 }

@@ -51,14 +51,15 @@ int my_strlen(char const *str);
 int my_getnbr(char const *str);
 
 // BSQ FUNCTIONS
-int  bsq(char const * file);
-int  allocateBSQ(bsq_t *bsq, char const *file);
-void fillBSQ(bsq_t *bsq);
-void fillFileContent(bsq_t *bsq);
-void fillCharMap(bsq_t *bsq);
-void fillSolvedMap(bsq_t *bsq);
-void fillIntMap(bsq_t *bsq);
-void fillNbLine(bsq_t *bsq);
-void findBSQ(bsq_t *bsq);
-void algoUpdateIntMap(bsq_t *bsq);
-void algoWriteSolution(bsq_t *bsq);
+int      bsq(char const * file);
+int      allocateBSQ(bsq_t *bsq, char const *file);
+void     fillBSQ(bsq_t *bsq);
+void     fillFileContent(bsq_t *bsq);
+void     fillCharMap(bsq_t *bsq);
+void     fillSolvedMap(bsq_t *bsq);
+void     fillIntMap(bsq_t *bsq);
+void     fillNbLine(bsq_t *bsq);
+void     findBSQ(bsq_t *bsq);
+void     algoUpdateIntMap(bsq_t *bsq);
+void     algoWriteSolution(bsq_t *bsq);
+uint32_t getMinValue(bsq_t *bsq, uint32_t index);

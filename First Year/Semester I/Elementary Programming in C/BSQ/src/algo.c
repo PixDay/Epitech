@@ -9,10 +9,35 @@
 
 void algoUpdateIntMap(bsq_t *bsq)
 {
-  (void)bsq;
+  uint32_t minValue = 0;
+
+  for (uint32_t i = 0; bsq->intMap[i] != -2; i++) {
+    if (bsq->intMap[i] >= 0) {
+      minValue = getMinValue(bsq, i);
+      bsq->intMap[i] = minValue;
+    }
+    if (bsq->solutionIndex < minValue)
+      bsq->solutionIndex = minValue;
+    minValue = 0;
+  }
 }
 
 void algoWriteSolution(bsq_t *bsq)
 {
   (void)bsq;
+}
+
+uint32_t getMinValue(bsq_t *bsq, uint32_t index)
+{
+  int min = 0;
+
+  if (index <= bsq->lineSize || bsq->intMap[index - 1] == -1 ||
+      bsq->intMap[index] == 0)
+    return bsq->intMap[index];
+  min = bsq->intMap[index - 1];
+  if (min > bsq->intMap[index - bsq->lineSize])
+    min = bsq->intMap[index - bsq->lineSize];
+  if (min > bsq->intMap[index - bsq->lineSize - 1])
+    min = bsq->intMap[index - bsq->lineSize - 1];
+  return min + 1;
 }

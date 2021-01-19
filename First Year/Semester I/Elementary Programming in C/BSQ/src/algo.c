@@ -27,7 +27,9 @@ void algoUpdateIntMap(bsq_t *bsq)
 void algoWriteSolution(bsq_t *bsq)
 {
   for (uint32_t currentLine = 0; currentLine < bsq->squareSize; currentLine++) {
-    
+    for (uint32_t currentColumn = bsq->solutionIndex; currentColumn--) {
+
+    }
   }
 }
 

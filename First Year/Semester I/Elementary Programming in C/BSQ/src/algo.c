@@ -26,7 +26,9 @@ void algoUpdateIntMap(bsq_t *bsq)
 
 void algoWriteSolution(bsq_t *bsq)
 {
-  (void)bsq;
+  for (uint32_t currentLine = 0; currentLine < bsq->squareSize; currentLine++) {
+    
+  }
 }
 
 uint32_t getMinValue(bsq_t *bsq, uint32_t index)

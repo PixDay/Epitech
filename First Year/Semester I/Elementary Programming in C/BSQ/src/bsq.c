@@ -21,6 +21,8 @@ int bsq(char const *file)
   if (error)
     return FAILURE;
   fillBSQ(&bsq);
+  if (bsq.error)
+    return FAILURE;
   findBSQ(&bsq);
   printFreeBSQ(&bsq);
   return EXIT_SUCCESS;

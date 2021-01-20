@@ -22,7 +22,7 @@ int bsq(char const *file)
     return FAILURE;
   fillBSQ(&bsq);
   findBSQ(&bsq);
-  //printBSQ(&bsq);
+  printFreeBSQ(&bsq);
   return EXIT_SUCCESS;
 }
 
@@ -61,4 +61,9 @@ void findBSQ(bsq_t *bsq)
 {
   algoUpdateIntMap(bsq);
   algoWriteSolution(bsq);
+}
+
+void printFreeBSQ(bsq_t *bsq)
+{
+  write(1, bsq->solvedMap, bsq->lineSize * bsq->nbLine);
 }

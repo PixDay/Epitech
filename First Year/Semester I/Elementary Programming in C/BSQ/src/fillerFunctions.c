@@ -51,11 +51,14 @@ void fillIntMap(bsq_t *bsq)
   uint32_t index = 0;
 
   while (bsq->charMap[index] != '\0') {
-    bsq->intMap[index] = 1;
-    if (bsq->charMap[index] == 'o')
+    if (bsq->charMap[index] == bsq->mapper.freeSpaceChar)
+      bsq->intMap[index] = 1;
+    else if (bsq->charMap[index] == bsq->mapper.wallChar)
       bsq->intMap[index] = 0;
-    if (bsq->charMap[index] == '\n')
+    else if (bsq->charMap[index] == '\n')
       bsq->intMap[index] = EOL;
+    else
+      bsq->error = FAILURE;
     index++;
   }
   bsq->intMap[index] = EOM;

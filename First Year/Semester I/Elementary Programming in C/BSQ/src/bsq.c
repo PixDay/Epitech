@@ -66,4 +66,8 @@ void findBSQ(bsq_t *bsq)
 void printFreeBSQ(bsq_t *bsq)
 {
   write(1, bsq->solvedMap, bsq->lineSize * bsq->nbLine);
+  free(bsq->fileContent);
+  free(bsq->charMap);
+  free(bsq->solvedMap);
+  free(bsq->intMap);
 }

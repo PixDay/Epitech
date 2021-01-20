@@ -26,11 +26,9 @@ void algoUpdateIntMap(bsq_t *bsq)
 
 void algoWriteSolution(bsq_t *bsq)
 {
-  for (uint32_t currentLine = 0; currentLine < bsq->squareSize; currentLine++) {
-    for (uint32_t currentColumn = bsq->solutionIndex; currentColumn > bsq->solutionIndex - bsq->lineSize; currentColumn--) {
+  for (uint32_t currentLine = 0; currentLine < bsq->squareSize; currentLine++)
+    for (uint32_t currentColumn = bsq->solutionIndex; currentColumn > bsq->solutionIndex - bsq->squareSize; currentColumn--)
         bsq->solvedMap[currentColumn - currentLine * bsq->lineSize] = bsq->mapper.solveChar;
-    }
-  }
 }
 
 uint32_t getMinValue(bsq_t *bsq, uint32_t index)

@@ -8,7 +8,8 @@
 CC	=	gcc
 
 SRC	=	src/main.c				\
-			src/screenSaver.c
+			src/screenSaver.c	\
+			src/init/init.c
 
 OBJECTS =	${SRC:.c=.o}
 

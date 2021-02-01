@@ -15,8 +15,6 @@
 #include <fcntl.h>
 #include <stdint.h>
 
-#include <stdio.h>
-
 /* DEFINES */
 #define FAILURE 84
 #define EOS     1

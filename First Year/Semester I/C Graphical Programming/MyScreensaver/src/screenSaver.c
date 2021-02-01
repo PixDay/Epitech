@@ -9,7 +9,13 @@
 
 size_t screenSaver(int argc, char **argv)
 {
+  screenSaver_t screenSaver;
   (void)argc;
   (void)argv;
+  // CHECK LES CONNARDS QUI SUPRIMENT L'ENV ...
+
+  if (globalInit(&screenSaver))
+    return FAILURE;
+  
   return EXIT_SUCCESS;
 }

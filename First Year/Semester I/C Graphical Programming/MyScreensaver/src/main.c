@@ -5,11 +5,10 @@
 ** adrien.colombier@epitech.eu
 */
 
-#include <stdlib.h>
+#include <screenSaver.h>
 
 int main(int argc, char **argv)
 {
-  (void)argc;
-  (void)argv;
+  screenSaver(argc, argv);
   return EXIT_SUCCESS;
 }

@@ -9,5 +9,6 @@
 
 size_t globalInit(screenSaver_t *screenSaver)
 {
+  (void)screenSaver;
   return EXIT_SUCCESS;
 }

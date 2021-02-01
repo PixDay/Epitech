@@ -24,3 +24,4 @@ typedef struct s_screenSaver {
 
 /* PROTOTYPES */
 size_t screenSaver(int argc, char **argv);
+size_t globalInit(screenSaver_t *screenSaver_t);

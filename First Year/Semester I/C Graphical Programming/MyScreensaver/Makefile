@@ -11,7 +11,7 @@ SRC	=	src/main.c
 
 OBJECTS =	${SRC:.c=.o}
 
-NAME	=	bsq
+NAME	=	my_screensaver
 
 CFLAGS	+=	-Wall -Wextra -pedantic -Ofast -I./include
 

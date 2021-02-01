@@ -18,8 +18,10 @@
 /* TYPES */
 typedef struct s_screenSaver {
   sfRenderWindow *window;
-  sfTexture     **textures;
-  sfSprite      **sprites;
+  sfTexture     **textures; // new type to handle data --> to do
+  sfSprite      **sprites;  // new type to handle functions --> to do
+  size_t          currentScene;
+  size_t          nbScene;
 } screenSaver_t;
 
 /* PROTOTYPES */

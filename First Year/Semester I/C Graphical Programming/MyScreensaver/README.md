@@ -12,3 +12,5 @@ For this project we are using CSFML (a C version of SFML)
 Go inside the MyScreensaver folder and run the `make` command, it should create my_screensaver binary file
 
 ### Run
+
+Simply run it with `./my_screensaver`

@@ -16,6 +16,10 @@ size_t screenSaver(int argc, char **argv)
 
   if (globalInit(&screenSaver))
     return FAILURE;
-  
+  while (sfRenderWindow_isOpen()) {
+    if (events())
+      return FAILURE;
+    drawSaver();
+  }
   return EXIT_SUCCESS;
 }

@@ -22,7 +22,7 @@ typedef struct s_window {
 } window_t;
 
 typedef struct s_screenSaver {
-  window_t        window;
+  window_t        app;
   sfTexture     **textures; // new type to handle data --> to do
   sfSprite      **sprites;  // new type to handle functions --> to do
   size_t          currentScene;

@@ -9,6 +9,9 @@
 
 size_t globalInit(engine_t *engine)
 {
-  (void)engine;
+  engine->app.mode = (sfVideoMode){1280, 960, 32};
+  engine->app.window = sfRenderWindow_create(engine->app.mode, "RUN", sfResize| sfClose, NULL);
+  if (engine->app.window == NULL)
+    return FAILURE;
   return EXIT_SUCCESS;
 }

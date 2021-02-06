@@ -9,7 +9,7 @@
 
 size_t screenSaver(int argc, char **argv)
 {
-  screenSaver_t screenSaver;
+  engine_t engine;
   (void)argc;
   (void)argv;
   // CHECK LES CONNARDS QUI SUPRIMENT L'ENV ...

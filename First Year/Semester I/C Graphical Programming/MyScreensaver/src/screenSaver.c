@@ -23,3 +23,8 @@ size_t screenSaver(int argc, char **argv)
   }
   return EXIT_SUCCESS;
 }
+
+void drawSaver(engine_t *engine)
+{
+  (void)engine;
+}

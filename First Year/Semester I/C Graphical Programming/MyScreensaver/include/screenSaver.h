@@ -21,13 +21,13 @@ typedef struct s_window {
   sfVideoMode     mode;
 } window_t;
 
-typedef struct s_screenSaver {
+typedef struct s_engine {
   window_t        app;
   sfTexture     **textures; // new type to handle data --> to do
   sfSprite      **sprites;  // new type to handle functions --> to do
   size_t          currentScene;
   size_t          nbScene;
-} screenSaver_t;
+} engine_t;
 
 /* PROTOTYPES */
 size_t screenSaver(int argc, char **argv);

@@ -7,8 +7,8 @@
 
 #include <screenSaver.h>
 
-size_t globalInit(screenSaver_t *screenSaver)
+size_t globalInit(engine_t *engine)
 {
-  (void)screenSaver;
+  (void)engine;
   return EXIT_SUCCESS;
 }

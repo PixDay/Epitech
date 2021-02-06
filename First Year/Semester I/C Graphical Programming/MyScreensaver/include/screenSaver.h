@@ -21,12 +21,18 @@ typedef struct s_window {
   sfVideoMode     mode;
 } window_t;
 
+typedef struct s_screenSaver {
+  sfSprite  **sprites;
+  sfTexture **textures;
+  size_t      nbOfSprites;
+  size_t      nbOfTextures;
+} screenSaver_t;
+
 typedef struct s_engine {
   window_t        app;
-  sfTexture     **textures; // new type to handle data --> to do
-  sfSprite      **sprites;  // new type to handle functions --> to do
-  size_t          currentScene;
-  size_t          nbScene;
+  screenSaver_t  *screenSavers;
+  size_t          currentScreen;
+  size_t          nbOfScreen;
 } engine_t;
 
 /* PROTOTYPES */

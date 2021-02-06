@@ -14,12 +14,12 @@ size_t screenSaver(int argc, char **argv)
   (void)argv;
   // CHECK LES CONNARDS QUI SUPRIMENT L'ENV ...
 
-  if (globalInit(&screenSaver))
+  if (globalInit(&engine))
     return FAILURE;
-  while (sfRenderWindow_isOpen(screenSaver.app.window)) {
-    if (events(&screenSaver))
+  while (sfRenderWindow_isOpen(engine.app.window)) {
+    if (events(&engine))
       return FAILURE;
-    drawSaver(&screenSaver);
+    drawSaver(&engine);
   }
   return EXIT_SUCCESS;
 }

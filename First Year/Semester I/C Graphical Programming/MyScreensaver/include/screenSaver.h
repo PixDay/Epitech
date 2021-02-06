@@ -31,7 +31,7 @@ typedef struct s_engine {
 
 /* PROTOTYPES */
 size_t screenSaver(int argc, char **argv);
-size_t globalInit(screenSaver_t *screenSaver);
+size_t globalInit(engine_t *screenSaver);
 
-size_t events(screenSaver_t *screenSaver);
-void   drawSaver(screenSaver_t *screenSaver);
+size_t events(engine_t *screenSaver);
+void   drawSaver(engine_t *screenSaver);

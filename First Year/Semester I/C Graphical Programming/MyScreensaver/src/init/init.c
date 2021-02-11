@@ -15,3 +15,8 @@ size_t globalInit(engine_t *engine)
     return FAILURE;
   return EXIT_SUCCESS;
 }
+
+size_t appInit(engine_t *engine)
+{
+  
+}

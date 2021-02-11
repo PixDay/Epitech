@@ -35,6 +35,6 @@ size_t events(engine_t *engine)
 void drawSaver(engine_t *engine)
 {
   sfRenderWindow_clear(engine->app.window, sfBlack);
-  // Where we will have to draw objects;
+  drawArrow(engine);
 	sfRenderWindow_display(engine->app.window);
 }

@@ -26,7 +26,7 @@ size_t events(engine_t *engine)
   static sfEvent event;
 
    while (sfRenderWindow_pollEvent(engine->app.window, &event)) {
-      if (event.type == sfEvtClosed)
+      if (event.type == sfEvtClosed || sfKeyboard_isKeyPressed(sfKeyEscape))
         sfRenderWindow_close(engine->app.window);
   }
   return 0;

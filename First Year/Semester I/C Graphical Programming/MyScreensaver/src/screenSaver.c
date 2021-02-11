@@ -10,9 +10,6 @@
 size_t screenSaver(int argc, char **argv)
 {
   engine_t engine;
-  (void)argc;
-  (void)argv;
-  // CHECK LES CONNARDS QUI SUPRIMENT L'ENV ...
 
   if (globalInit(&engine))
     return FAILURE;

@@ -18,7 +18,9 @@ size_t appInit(engine_t *engine)
 {
   engine->app.mode = (sfVideoMode){1920, 1080, 32};
   engine->app.window = sfRenderWindow_create(engine->app.mode, "SCREENSAVER", sfFullscreen | sfClose, NULL);
-  if (engine->app.window == NULL)
+  engine->nextSprite = sfSprite_create();
+  engine->nextTexture = sfTexture_createFromFile("img/next.png", NULL);
+  if (!engine->app.window || !engine->nextSprite || !engine->nextTexture)
     return FAILURE;
   return EXIT_SUCCESS;
 }

@@ -7,7 +7,7 @@
 
 #include <screenSaver.h>
 
-size_t screenSaver(int argc, char **argv)
+size_t screenSaver(void)
 {
   engine_t engine;
 

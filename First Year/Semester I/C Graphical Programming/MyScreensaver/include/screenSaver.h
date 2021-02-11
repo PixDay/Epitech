@@ -31,6 +31,8 @@ typedef struct s_screenSaver {
 typedef struct s_engine {
   window_t        app;
   sfVector2f      cursor;
+  sfSprite       *nextSprite;
+  sfTexture      *nextTexture;
   screenSaver_t  *screenSavers;
   size_t          currentScreen;
   size_t          nbOfScreen;

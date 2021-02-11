@@ -23,7 +23,12 @@ size_t screenSaver(void)
 
 size_t events(engine_t *engine)
 {
-  (void)engine;
+  static sfEvent event;
+
+   while (sfRenderWindow_pollEvent(engine->app.window, &event)) {
+      if (event.type == sfEvtClosed)
+        sfRenderWindow_close(engine->app.window);
+  }
   return 0;
 }
 

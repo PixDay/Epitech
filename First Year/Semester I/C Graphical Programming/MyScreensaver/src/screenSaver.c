@@ -16,7 +16,7 @@ size_t screenSaver(void)
   while (sfRenderWindow_isOpen(engine.app.window)) {
     if (events(&engine))
       return FAILURE;
-    updateCursor(engine);
+    updateCursor(&engine);
     drawSaver(&engine);
   }
   return EXIT_SUCCESS;

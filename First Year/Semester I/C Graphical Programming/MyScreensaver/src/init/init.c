@@ -22,5 +22,6 @@ size_t appInit(engine_t *engine)
   engine->nextTexture = sfTexture_createFromFile("img/next.png", NULL);
   if (!engine->app.window || !engine->nextSprite || !engine->nextTexture)
     return FAILURE;
+  sfSprite_setTexture(engine->nextSprite, engine->nextTexture, sfTrue);
   return EXIT_SUCCESS;
 }

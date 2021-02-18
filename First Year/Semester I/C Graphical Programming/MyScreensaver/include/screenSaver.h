@@ -9,6 +9,7 @@
 
 /* STANDART INCLUDES */
 #include <stdlib.h>
+#include <stdint.h>
 #include <SFML/Graphics.h>
 #include <SFML/Audio.h>
 

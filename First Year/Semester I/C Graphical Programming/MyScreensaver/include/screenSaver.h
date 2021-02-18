@@ -45,6 +45,6 @@ size_t globalInit(engine_t *screenSaver);
 size_t appInit(engine_t *engine);
 size_t events(engine_t *screenSaver);
 void   drawSaver(engine_t *screenSaver);
-void drawArrow(engine_t *engine);
-void updateCursor(engine_t *engine);
+void   drawArrow(engine_t *engine);
+void   updateCursor(engine_t *engine);
 

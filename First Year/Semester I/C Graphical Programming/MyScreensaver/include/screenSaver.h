@@ -23,8 +23,6 @@ typedef struct s_window {
 } window_t;
 
 typedef struct s_screenSaver {
-  sfSprite  **sprites;
-  sfTexture **textures;
   size_t      nbOfSprites;
   size_t      nbOfTextures;
 } screenSaver_t;

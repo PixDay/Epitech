@@ -7,7 +7,7 @@
 
 #include <screenSaver.h>
 
-void drawRect(sfVector2f position, sfVector2f size, uint32_t color, engit_t *engine)
+void drawRect(sfVector2f position, sfVector2f size, uint32_t color, engine_t *engine)
 {
   printf("DRAW RECT");
 }

@@ -7,10 +7,11 @@
 
 CC	=	gcc
 
-SRC	=	src/main.c				\
-			src/screenSaver.c	\
-			src/init/init.c		\
-			src/draw/draw.c		\
+SRC	=	src/main.c							\
+			src/screenSaver.c				\
+			src/init/init.c					\
+			src/draw/draw.c					\
+			src/draw/shapeDrawer.c	\
 			src/util/cursor.c
 
 OBJECTS =	${SRC:.c=.o}

@@ -9,7 +9,7 @@
 
 size_t globalInit(engine_t *engine)
 {
-  if (appInit(engine))
+  if (appInit(engine) || screenSaverInit(engine))
     return FAILURE;
   return EXIT_SUCCESS;
 }
@@ -24,4 +24,9 @@ size_t appInit(engine_t *engine)
     return FAILURE;
   sfSprite_setTexture(engine->nextSprite, engine->nextTexture, sfTrue);
   return EXIT_SUCCESS;
+}
+
+size_t screenSaverInit(engine_t *engine)
+{
+  (void)engine;
 }

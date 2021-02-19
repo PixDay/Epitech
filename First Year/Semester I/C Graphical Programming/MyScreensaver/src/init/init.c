@@ -29,4 +29,5 @@ size_t appInit(engine_t *engine)
 size_t screenSaverInit(engine_t *engine)
 {
   (void)engine;
+  return EXIT_SUCCESS;
 }

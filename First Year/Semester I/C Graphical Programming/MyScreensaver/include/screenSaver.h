@@ -16,6 +16,7 @@
 /* DEFINES */
 #define FAILURE 84
 #define HD 1920 * 1080
+#define ULTRA_HD 3840 * 2060
 
 /* TYPES */
 typedef struct s_window {

@@ -23,6 +23,7 @@ typedef struct s_window {
 } window_t;
 
 typedef struct s_screenSaver {
+  uint32_t   *pixelBuffer;
   size_t      nbOfSprites;
   size_t      nbOfTextures;
 } screenSaver_t;

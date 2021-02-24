@@ -9,10 +9,12 @@
 
 void flushBuffer(engine_t *engine)
 {
-  sfTexture *texture = sfTexture_createFromMemory(
+  sfTexture *texture = sfTexture_create(HD_LINE_SIZE, HD_COLUMN_SIZE);
+
+  sfTexture_updateFromPixels(
+    texture, 
     engine->screenSavers[engine->currentScreen].pixelBuffer,
-    HD,
-    NULL
+    HD_LINE_SIZE, HD_COLUMN_SIZE, 0, 0
   );
 
   sfSprite_setTexture(

@@ -28,6 +28,13 @@ size_t appInit(engine_t *engine)
 
 size_t screenSaverInit(engine_t *engine)
 {
-  (void)engine;
+  engine->currentScreen = 0;
+  engine->nbOfScreen = 3;
+  engine->screenSavers = malloc(engine->nbOfScreen * sizeof(screenSaver_t));
+  if (engine->screenSavers == NULL)
+    return FAILURE;
+  for (size_t scene = 0; scene < engine->nbOfScreen; scene++) {
+    engine->screenSavers[scene].pixelBuffer = malloc(() * sizeof(uint32_t))
+  }
   return EXIT_SUCCESS;
 }

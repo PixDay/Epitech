@@ -35,7 +35,8 @@ size_t screenSaverInit(engine_t *engine)
     return FAILURE;
   for (size_t scene = 0; scene < engine->nbOfScreen; scene++) {
     engine->screenSavers[scene].pixelBuffer = malloc((HD) * sizeof(uint32_t));
-    if (engine->screenSavers[scene].pixelBuffer == NULL)
+    engine->screenSavers[scene].pixelSprite = sfSprite_create();
+    if (engine->screenSavers[scene].pixelBuffer == NULL || engine->screenSavers[scene].pixelSprite == NULL)
       return FAILURE;
   }
   return EXIT_SUCCESS;

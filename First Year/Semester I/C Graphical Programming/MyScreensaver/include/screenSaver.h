@@ -14,11 +14,12 @@
 #include <SFML/Audio.h>
 
 /* DEFINES */
-#define FAILURE 84
-#define HD 1920 * 1080
-#define HD_LINE_SIZE 1920
-#define HD_COLUMN_SIZE 1080
-#define ULTRA_HD 3840 * 2060
+#define FAILURE         84
+#define RGBA            4
+#define HD              1920 * 1080
+#define HD_LINE_SIZE    1920
+#define HD_COLUMN_SIZE  1080
+#define ULTRA_HD        3840 * 2060
 
 /* TYPES */
 typedef struct s_window {
@@ -27,7 +28,7 @@ typedef struct s_window {
 } window_t;
 
 typedef struct s_screenSaver {
-  uint32_t   *pixelBuffer;
+  sfUint8    *pixelBuffer;
   sfSprite   *pixelSprite;
   size_t      nbOfSprites;
   size_t      nbOfTextures;
@@ -53,5 +54,6 @@ void   drawSaver(engine_t *screenSaver);
 void   drawArrow(engine_t *engine);
 void   drawRect(sfVector2f position, sfVector2f size, uint32_t color, engine_t *engine);
 void   drawCircle(sfVector2f position, uint32_t size, uint32_t color, engine_t *engine);
+void   flushBuffer(engine_t *engine);
 void   updateCursor(engine_t *engine);
 

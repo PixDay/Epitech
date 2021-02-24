@@ -15,6 +15,7 @@
 
 /* DEFINES */
 #define FAILURE 84
+#define HD 1920 * 1080
 
 /* TYPES */
 typedef struct s_window {

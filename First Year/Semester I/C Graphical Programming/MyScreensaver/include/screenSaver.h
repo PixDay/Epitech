@@ -16,6 +16,8 @@
 /* DEFINES */
 #define FAILURE 84
 #define HD 1920 * 1080
+#define HD_LINE_SIZE 1920
+#define HD_COLUMN_SIZE 1080
 #define ULTRA_HD 3840 * 2060
 
 /* TYPES */

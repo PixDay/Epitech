@@ -7,6 +7,27 @@
 
 #include <screenSaver.h>
 
+void flushBuffer(engine_t *engine)
+{
+  sfTexture *texture = sfTexture_createFromMemory(
+    engine->screenSavers[engine->currentScreen].pixelBuffer,
+    HD,
+    NULL
+  );
+
+  sfSprite_setTexture(
+    engine->screenSavers[engine->currentScreen].pixelSprite,
+    texture, 
+    sfTrue
+  );
+  sfRenderWindow_drawSprite(
+    engine->app.window,
+    engine->screenSavers[engine->currentScreen].pixelSprite,
+    NULL
+  );
+  sfTexture_destroy(texture);
+}
+
 void drawArrow(engine_t *engine)
 {
   sfVector2f reverseScale = {-1.0f, -1.0f};

@@ -21,6 +21,10 @@
 #define HD_LINE_SIZE    1920
 #define HD_COLUMN_SIZE  1080
 #define ULTRA_HD        3840 * 2060
+#define BACKGROUND      0x2D1343FF
+#define BLUE            0x1C9BDCFF
+#define PINK            0xFF07BFFF
+#define GREY            0x260D3AFF
 
 /* TYPES */
 typedef struct s_window {

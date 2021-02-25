@@ -13,18 +13,18 @@ void flushBuffer(engine_t *engine)
 
   sfTexture_updateFromPixels(
     texture, 
-    engine->screenSavers[engine->currentScreen].pixelBuffer,
+    engine->screenSavers.pixelBuffer,
     HD_LINE_SIZE, HD_COLUMN_SIZE, 0, 0
   );
 
   sfSprite_setTexture(
-    engine->screenSavers[engine->currentScreen].pixelSprite,
+    engine->screenSavers.pixelSprite,
     texture, 
     sfTrue
   );
   sfRenderWindow_drawSprite(
     engine->app.window,
-    engine->screenSavers[engine->currentScreen].pixelSprite,
+    engine->screenSavers.pixelSprite,
     NULL
   );
   sfTexture_destroy(texture);

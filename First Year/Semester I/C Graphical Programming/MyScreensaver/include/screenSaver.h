@@ -32,11 +32,17 @@ typedef struct s_window {
   sfVideoMode     mode;
 } window_t;
 
+typedef struct s_slidingRect {
+  sfVector2f position;
+  sfVector2f size;
+  char       status;
+  char       direction;
+} slidingRect_t;
+
 typedef struct s_screenSaver {
-  sfUint8    *pixelBuffer;
-  sfSprite   *pixelSprite;
-  size_t      nbOfSprites;
-  size_t      nbOfTextures;
+  slidingRect_t *rects;
+  sfUint8       *pixelBuffer;
+  sfSprite      *pixelSprite;
 } screenSaver_t;
 
 typedef struct s_engine {
@@ -44,7 +50,7 @@ typedef struct s_engine {
   sfVector2f      cursor;
   sfSprite       *nextSprite;
   sfTexture      *nextTexture;
-  screenSaver_t  *screenSavers;
+  screenSaver_t   screenSavers;
   size_t          currentScreen;
   size_t          nbOfScreen;
 } engine_t;

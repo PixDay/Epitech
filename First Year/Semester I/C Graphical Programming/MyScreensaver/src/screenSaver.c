@@ -36,7 +36,9 @@ size_t events(engine_t *engine)
 void drawSaver(engine_t *engine)
 {
   sfRenderWindow_clear(engine->app.window, sfBlack);
-  drawRect((sfVector2f){0.0f, 0.0f}, (sfVector2f){1000.0f, 1000.0f}, 0xBABABAFF, engine);
+  drawRect((sfVector2f){100.0f, 100.0f}, (sfVector2f){1720.0f, 880.0f}, 0xFF0000A0, engine);
+  drawRect((sfVector2f){200.0f, 200.0f}, (sfVector2f){100.0f, 300.0f}, 0x00FF00A0, engine);
+  drawCircle((sfVector2f){1250.0f, 156.0f}, 200.0f, 0x0000FFA0, engine);
   flushBuffer(engine);
   drawArrow(engine);
 	sfRenderWindow_display(engine->app.window);

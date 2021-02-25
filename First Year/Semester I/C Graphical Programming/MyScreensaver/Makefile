@@ -12,6 +12,7 @@ SRC	=	src/main.c							\
 			src/init/init.c					\
 			src/draw/draw.c					\
 			src/draw/shapeDrawer.c	\
+			src/draw/circle.c				\
 			src/util/cursor.c
 
 OBJECTS =	${SRC:.c=.o}
@@ -20,7 +21,7 @@ NAME	=	my_screensaver
 
 CFLAGS	+=	-Wall -Wextra -pedantic -Ofast -I./include
 
-LDFLAGS	+=	-L./lib -lmerlineC -lcsfml-graphics -lcsfml-window -lcsfml-system
+LDFLAGS	+=	-L./lib -lmerlineC -lcsfml-graphics -lcsfml-window -lcsfml-system -lm
 
 all:	${NAME}
 

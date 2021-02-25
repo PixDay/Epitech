@@ -46,3 +46,18 @@ void drawArrow(engine_t *engine)
   if (sfFloatRect_contains(&rightArrow, engine->cursor.x, engine->cursor.y))
     sfRenderWindow_drawSprite(engine->app.window, engine->nextSprite, NULL);
 }
+
+void screenSaverOne(engine_t *engine)
+{
+  (void)engine;
+}
+
+void screenSaverTwo(engine_t *engine)
+{
+  (void)engine;
+}
+
+void screenSaverThree(engine_t *engine)
+{
+  (void)engine;
+}

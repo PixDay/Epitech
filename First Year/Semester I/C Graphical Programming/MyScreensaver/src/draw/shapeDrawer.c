@@ -19,10 +19,10 @@ void drawRect(sfVector2f position, sfVector2f size, uint32_t color, engine_t *en
     for (uint32_t x = 0; x < size.x; x++) {
       coord.x = (position.x * RGBA) + (x * RGBA);
       coord.y = (position.y * HD_LINE_SIZE * RGBA) + (y * RGBA * HD_LINE_SIZE);
-      engine->screenSavers[engine->currentScreen].pixelBuffer[coord.y + coord.x] = R;
-      engine->screenSavers[engine->currentScreen].pixelBuffer[coord.y + coord.x + 1] = G;
-      engine->screenSavers[engine->currentScreen].pixelBuffer[coord.y + coord.x + 2] = B;
-      engine->screenSavers[engine->currentScreen].pixelBuffer[coord.y + coord.x + 3] = A;
+      engine->screenSavers.pixelBuffer[coord.y + coord.x] = R;
+      engine->screenSavers.pixelBuffer[coord.y + coord.x + 1] = G;
+      engine->screenSavers.pixelBuffer[coord.y + coord.x + 2] = B;
+      engine->screenSavers.pixelBuffer[coord.y + coord.x + 3] = A;
     }
   }
 }
@@ -41,10 +41,10 @@ void drawCircle(sfVector2f position, uint32_t size, uint32_t color, engine_t *en
       if ((blur = radiusBlur(position, size, x, y)) > 0.0f) {
         coord.x = (position.x * RGBA) + (x * RGBA);
         coord.y = (position.y * HD_LINE_SIZE * RGBA) + (y * RGBA * HD_LINE_SIZE);
-        engine->screenSavers[engine->currentScreen].pixelBuffer[coord.y + coord.x] = R;
-        engine->screenSavers[engine->currentScreen].pixelBuffer[coord.y + coord.x + 1] = G;
-        engine->screenSavers[engine->currentScreen].pixelBuffer[coord.y + coord.x + 2] = B;
-        engine->screenSavers[engine->currentScreen].pixelBuffer[coord.y + coord.x + 3] = (sfUint8)((float)A * blur);
+        engine->screenSavers.pixelBuffer[coord.y + coord.x] = R;
+        engine->screenSavers.pixelBuffer[coord.y + coord.x + 1] = G;
+        engine->screenSavers.pixelBuffer[coord.y + coord.x + 2] = B;
+        engine->screenSavers.pixelBuffer[coord.y + coord.x + 3] = (sfUint8)((float)A * blur);
       }
     }
   }

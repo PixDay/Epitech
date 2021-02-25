@@ -10,6 +10,7 @@
 /* STANDART INCLUDES */
 #include <stdlib.h>
 #include <stdint.h>
+#include <math.h>
 #include <SFML/Graphics.h>
 #include <SFML/Audio.h>
 
@@ -54,6 +55,7 @@ void   drawSaver(engine_t *screenSaver);
 void   drawArrow(engine_t *engine);
 void   drawRect(sfVector2f position, sfVector2f size, uint32_t color, engine_t *engine);
 void   drawCircle(sfVector2f position, uint32_t size, uint32_t color, engine_t *engine);
+float  radiusBlur(sfVector2f position, uint32_t size, uint32_t x, uint32_t y);
 void   flushBuffer(engine_t *engine);
 void   updateCursor(engine_t *engine);
 

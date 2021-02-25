@@ -36,14 +36,10 @@ size_t events(engine_t *engine)
 void drawSaver(engine_t *engine)
 {
   sfRenderWindow_clear(engine->app.window, sfBlack);
-  // background : #2d1343
-  drawRect((sfVector2f){0.0f, 0.0f}, (sfVector2f){HD_LINE_SIZE, HD_COLUMN_SIZE}, 0x2D1343FF, engine);
-  // BLEU : #1c9bdc
-  drawRect((sfVector2f){120.0f, 120.0f}, (sfVector2f){200.0f, 50.0f}, 0x1C9BDCFF, engine);
-  // ROSE : #ff07bf
-  drawRect((sfVector2f){200.0f, 200.0f}, (sfVector2f){250.0f, 70.0f}, 0xFF07BFFF, engine);
-  // DARK : #260d3a
-  drawRect((sfVector2f){280.0f, 280.0f}, (sfVector2f){220.0f, 60.0f}, 0x260D3AFF, engine);
+  drawRect((sfVector2f){0.0f, 0.0f}, (sfVector2f){HD_LINE_SIZE, HD_COLUMN_SIZE}, BACKGROUND, engine);
+  drawRect((sfVector2f){120.0f, 120.0f}, (sfVector2f){200.0f, 50.0f}, BLUE, engine);
+  drawRect((sfVector2f){200.0f, 200.0f}, (sfVector2f){250.0f, 70.0f}, PINK, engine);
+  drawRect((sfVector2f){280.0f, 280.0f}, (sfVector2f){220.0f, 60.0f}, GREY, engine);
   flushBuffer(engine);
   drawArrow(engine);
 	sfRenderWindow_display(engine->app.window);

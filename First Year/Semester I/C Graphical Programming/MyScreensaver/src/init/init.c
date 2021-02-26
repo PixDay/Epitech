@@ -42,6 +42,8 @@ size_t screenSaverInit(engine_t *engine)
     engine->screenSavers.rects->direction = rand() % 2 ? 'R' : 'L';
     engine->screenSavers.rects->position = (sfVector2f){rand() % 300 + 960, rand() % 900};
     engine->screenSavers.rects->size = (sfVector2f){rand() % 250 + 100, rand() % 50 + 50};
+    engine->screenSavers.rects->originalPos = engine->screenSavers.rects->position;
+    engine->screenSavers.rects->originalSize = engine->screenSavers.rects->size;
   }
   return EXIT_SUCCESS;
 }

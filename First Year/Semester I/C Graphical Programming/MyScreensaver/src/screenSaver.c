@@ -36,10 +36,7 @@ size_t events(engine_t *engine)
 void drawSaver(engine_t *engine)
 {
   sfRenderWindow_clear(engine->app.window, sfBlack);
-  drawRect((sfVector2f){0.0f, 0.0f}, (sfVector2f){HD_LINE_SIZE, HD_COLUMN_SIZE}, BACKGROUND, engine);
-  drawRect((sfVector2f){120.0f, 120.0f}, (sfVector2f){200.0f, 50.0f}, BLUE, engine);
-  drawRect((sfVector2f){200.0f, 200.0f}, (sfVector2f){250.0f, 70.0f}, PINK, engine);
-  drawRect((sfVector2f){280.0f, 280.0f}, (sfVector2f){220.0f, 60.0f}, GREY, engine);
+  screenSaverOne(engine);
   flushBuffer(engine);
   drawArrow(engine);
 	sfRenderWindow_display(engine->app.window);

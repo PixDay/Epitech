@@ -10,6 +10,7 @@ CC	=	gcc
 SRC	=	src/main.c							\
 			src/screenSaver.c				\
 			src/init/init.c					\
+			src/init/free.c					\
 			src/draw/draw.c					\
 			src/draw/shapeDrawer.c	\
 			src/draw/circle.c				\

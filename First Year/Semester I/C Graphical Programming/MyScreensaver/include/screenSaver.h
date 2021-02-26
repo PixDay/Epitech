@@ -35,6 +35,8 @@ typedef struct s_window {
 typedef struct s_slidingRect {
   sfVector2f position;
   sfVector2f size;
+  sfVector2f originalPos;
+  sfVector2f originalSize;
   char       status;
   char       direction;
 } slidingRect_t;

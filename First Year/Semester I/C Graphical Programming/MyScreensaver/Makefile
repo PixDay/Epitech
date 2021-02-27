@@ -20,7 +20,7 @@ OBJECTS =	${SRC:.c=.o}
 
 NAME	=	my_screensaver
 
-CFLAGS	+=	-Wall -Wextra -pedantic -Ofast -I./include
+CFLAGS	+=	-Wall -Wextra -pedantic -Ofast -I./include -g
 
 LDFLAGS	+=	-L./lib -lmerlineC -lcsfml-graphics -lcsfml-window -lcsfml-system -lm
 

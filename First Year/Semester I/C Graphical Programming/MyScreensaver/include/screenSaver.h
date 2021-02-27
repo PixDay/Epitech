@@ -76,4 +76,5 @@ void   drawCircle(sfVector2f position, uint32_t size, uint32_t color, engine_t *
 float  radiusBlur(sfVector2f position, uint32_t size, uint32_t x, uint32_t y);
 void   flushBuffer(engine_t *engine);
 void   updateCursor(engine_t *engine);
+void   screenSaverOneLogic(engine_t *engine);
 

@@ -25,6 +25,7 @@
 #define BLUE            0x1C9BDCFF
 #define PINK            0xFF07BFFF
 #define GREY            0x260D3AFF
+#define RECTS           20
 
 /* TYPES */
 typedef struct s_window {
@@ -39,6 +40,7 @@ typedef struct s_slidingRect {
   sfVector2f originalSize;
   char       status;
   char       direction;
+  char       color;
 } slidingRect_t;
 
 typedef struct s_screenSaver {

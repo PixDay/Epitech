@@ -49,6 +49,7 @@ void drawArrow(engine_t *engine)
 
 void screenSaverOne(engine_t *engine)
 {
+  screenSaverOneLogic(engine);
   drawRect((sfVector2f){0.0f, 0.0f}, (sfVector2f){HD_LINE_SIZE, HD_COLUMN_SIZE}, BACKGROUND, engine);
   for (size_t i = 0; i < RECTS; i++) {
     drawRect(

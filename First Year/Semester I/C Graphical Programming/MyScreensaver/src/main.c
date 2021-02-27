@@ -5,6 +5,7 @@
 ** adrien.colombier@epitech.eu
 */
 
+#include <time.h>
 #include <screenSaver.h>
 
 int main(int argc, char **argv, char **env)
@@ -13,6 +14,7 @@ int main(int argc, char **argv, char **env)
   (void)argv;
   (void)env;
   // CHECK LES CONNARDS QUI SUPRIMENT L'ENV ...
+  srand(time(NULL));
   screenSaver();
   return EXIT_SUCCESS;
 }

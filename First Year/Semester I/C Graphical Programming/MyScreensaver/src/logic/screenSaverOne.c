@@ -9,5 +9,13 @@
 
 void screenSaverOneLogic(engine_t *engine)
 {
-  (void)engine;
+  for (size_t i = 0; i < RECTS; i++) {      
+    if (engine->screenSavers.rects[i].direction == 'R') {
+      // RIGHT
+
+    } else {
+      // LEFT
+
+    }
+  }
 }

@@ -38,8 +38,8 @@ size_t screenSaverInit(engine_t *engine)
   for (size_t i = 0; i < RECTS; i++) {
     engine->screenSavers.rects[i].status = 'I';
     engine->screenSavers.rects[i].direction = rand() % 2 ? 'R' : 'L';
-    engine->screenSavers.rects[i].position = (sfVector2f){(float)(rand() % 1200 + 350), (float)(rand() % 980)};
-    engine->screenSavers.rects[i].size = (sfVector2f){(float)(rand() % 250 + 100), (float)(rand() % 50 + 50)};
+    engine->screenSavers.rects[i].position = (sfVector2f){(float)(rand() % 1200), (float)(rand() % 900)};
+    engine->screenSavers.rects[i].size = (sfVector2f){(float)(rand() % 600 + 100), (float)(rand() % 130 + 50)};
     engine->screenSavers.rects[i].originalPos = engine->screenSavers.rects->position;
     engine->screenSavers.rects[i].originalSize = engine->screenSavers.rects->size;
     engine->screenSavers.rects[i].color = rand() % 3;

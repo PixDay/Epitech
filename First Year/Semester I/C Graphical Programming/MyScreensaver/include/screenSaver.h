@@ -25,7 +25,7 @@
 #define BLUE            0x1C9BDCFF
 #define PINK            0xFF07BFFF
 #define GREY            0x260D3AFF
-#define RECTS           20
+#define RECTS           10
 
 /* TYPES */
 typedef struct s_window {

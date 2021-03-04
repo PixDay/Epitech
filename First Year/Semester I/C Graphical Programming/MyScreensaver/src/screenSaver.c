@@ -37,8 +37,10 @@ size_t events(engine_t *engine)
 
 void drawSaver(engine_t *engine)
 {
+  void (*screenFunction[3])(engine_t *engine) = {&screenSaverOne, &screenSaverTwo, &screenSaverThree};
+
   sfRenderWindow_clear(engine->app.window, sfBlack);
-  screenSaverOne(engine);
+  screenFunction[engine->currentScreen](engine);
   flushBuffer(engine);
   drawArrow(engine);
 	sfRenderWindow_display(engine->app.window);

@@ -29,6 +29,8 @@ size_t events(engine_t *engine)
    while (sfRenderWindow_pollEvent(engine->app.window, &event)) {
       if (event.type == sfEvtClosed || sfKeyboard_isKeyPressed(sfKeyEscape))
         sfRenderWindow_close(engine->app.window);
+      if (sfMouse_isButtonPressed(sfMouseLeft))
+        changeScene(engine);
   }
   return 0;
 }

@@ -7,7 +7,9 @@
 
 CC	=	gcc
 
-SRC	=	src/main.c					\
+SRC	=	src/main.c			\
+		src/allocation.c	\
+		src/sort.c
 
 OBJECTS =	${SRC:.c=.o}
 

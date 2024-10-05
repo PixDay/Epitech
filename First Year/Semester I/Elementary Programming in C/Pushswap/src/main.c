@@ -5,18 +5,25 @@
 ** adrien.colombier@epitech.eu
 */
 
+#include <stdio.h>
 #include "pushswap.h"
 
 int main(int argc, char **argv)
 {
-  int32_t *array_a = NULL;
+  pushswap_t pushswap;
   uint32_t array_size = argc - 1;
 
   if (check_args(argc, argv))
     return FAILURE;
-  if (alloc_and_fill_number_in_array(argc, argv, array_a))
+  if (init_pushswap(&pushswap, array_size))
     return FAILURE;
-  sort(array_a, array_size);
+  if (fill_number_in_array(argc, argv, pushswap.array_a))
+    return FAILURE;
+  for (uint32_t i = 0; i < array_size; i++)
+    if (pushswap.array_a[i].element < 0)
+      pushswap.number_of_negative++;
+  sort(&pushswap);
+  free_pushswap(&pushswap);
   return SUCCESS;
 }
 
